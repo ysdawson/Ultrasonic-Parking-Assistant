@@ -1,27 +1,27 @@
-#include <NewPing.h>
+#include <NewPing.h>   // included library
 
-#define TRIG_PIN  9
+#define TRIG_PIN  9    // defining pins for better readability
 #define ECHO_PIN  10
 #define RED_PIN   6
 #define GREEN_PIN 5
 #define BUZZER_PIN 7
 #define MAX_DISTANCE 200
 
-NewPing sonar(TRIG_PIN, ECHO_PIN, MAX_DISTANCE);
+NewPing sonar(TRIG_PIN, ECHO_PIN, MAX_DISTANCE);  // create object for library
 
-void setup() {
+void setup() {            // set i/o and start communication
   pinMode(RED_PIN, OUTPUT);
   pinMode(GREEN_PIN, OUTPUT);
   pinMode(BUZZER_PIN, OUTPUT);
   Serial.begin(9600);
 }
 
-int getDistance() {
+int getDistance() {        // created the distance function 
   delay(30);
   return sonar.ping_cm();
 }
 
-void setAlerts(int distance) {
+void setAlerts(int distance) {      // created the logic function
   if (distance > 50) {
     // Safe (Green + Buzzer Off)
     digitalWrite(GREEN_PIN, HIGH);
