@@ -18,16 +18,15 @@ A simple Arduino-based project that uses an **HC-SR04 ultrasonic sensor**, **LED
 
 ## 🛠️ Components Required
 
-| Component         | Quantity |
-|------------------|----------|
-| Arduino UNO/Nano | 1        |
-| HC-SR04 Sensor   | 1        |
-| Red LED          | 1        |
-| Green LED        | 1        |
-| Buzzer           | 1        |
-| Resistors (220Ω) | 2        |
+| Component        |  Quantity |
+|------------------|-----------|
+| Arduino UNO      | 1         |
+| HC-SR04 Sensor   | 1         |
+| Red LED          | 1         |
+| Green LED        | 1         |
+| Buzzer           | 1         |
 | Jumper Wires     | As needed |
-| Breadboard       | 1        |
+| Breadboard       | As needed |
 
 ---
 
